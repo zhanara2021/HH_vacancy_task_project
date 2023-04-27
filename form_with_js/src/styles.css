@@ -1,0 +1,364 @@
+.container{
+    background-color: #CAFFA0;
+    position: absolute;
+    width: 1216px;
+    height: 456px;
+    border-radius: 24px;
+    display:flex;
+    flex-direction: row;
+    gap: 176px;
+    }
+
+.left {
+    position: absolute;
+    margin-left: 32px ;
+    width: 400px;
+}
+.container h2{
+    position: relative;
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: #383838;
+}
+.containerText{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #383838;
+    opacity: 0.7;
+    padding-bottom: 60px;
+}
+.container image{
+    position: relative;
+    width: 356px;
+    height: 212.62px;
+    left: 42px;
+}
+.right #windows {
+    position: absolute;
+    width: 576px;
+    height: 392px;
+    margin-top: 32px;
+    margin-left: 608px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+.upper {
+    display:flex;
+    justify-content:space-between;
+    margin: 0 32px;
+    padding-top: 10px;
+}
+.upperp2{
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #9B9B9B;
+}
+.upperp1{
+    position: relative;
+    height: 20px;
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #383838;
+}
+.labelContainer{
+    display: flex;
+    flex-direction: row;
+    row-gap: 8px;
+    padding-left: 24px;
+}
+span{
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background: #F5F5F5;
+    width: 258px;
+    
+  }
+  label {
+  display: flex;
+  cursor: pointer;
+  width: 262px;
+  height: 56px;
+  margin-bottom: 8px;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  width:0px;
+}
+
+.value {
+  position: relative;
+  padding: 18px 0 18px 16px;
+  border-radius: 15px;
+}
+
+.value:hover {
+  background: #FFFFFF;
+  border-radius: 15px;
+  outline: 1px solid #383838;
+}
+.value::before {
+  content: "";
+  position: absolute;
+  margin-left: 202px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  outline: 1px solid #383838;
+}
+
+input[type="radio"]:checked~.value {
+  background-color: #FFFFFF;
+  outline: 1px solid #383838;
+}
+
+input[type="radio"]:checked~.value::before {
+  position: absolute;
+  outline-width: 6px;
+  width: 10px;
+  height: 10px;
+  margin-left:206px;
+  margin-top:6px;
+  background-color: #FFFFFF;
+}
+.buttons{
+  position: absolute;
+  top: 316px;
+  left: 32px;
+  display: flex;
+  flex-direction: row;
+}
+#buttonNext{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    margin-left: 308px;
+    width: 108px;
+    height: 44px;
+    background: #383838;
+    border-radius: 12px;
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+#buttonPrevious{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 1px -10px;
+  width: 108px;
+  height: 44px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383838 ;
+}
+.buttonVector1{
+  padding-right: 9.5px;
+}
+.buttonVector2{
+  padding-left: 9.5px;
+}
+
+#w1 > .dropdown, #w6 > .dropdown {
+  margin-left: 32px;
+  position: relative;
+  width: 512px;
+  height: 56px;
+  font-size: 1.3rem;
+  padding: 0.6 0.5rem;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid  #383838;
+  color: #9B9B9B;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#w1 > .dropdown > .downErrow, #w6 > .dropdown > .downErrow{
+  position: relative;
+  margin-left:440px; 
+  margin-top:13.5px;
+}
+#w1 >#options, #w6 >#options2 {
+  width: 512px;
+  left: 32px;
+  top: 132px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  display: none;
+  flex-direction: column;
+  padding-left: 37px;
+}
+#w1 > #options > label, #w6 > #options2 > label {
+  height: 25px;
+}
+#w1 >#options > label:hover, #w6 > #options2 > label:hover{
+  border-bottom: 1px solid rgb(56,56,56,0.1);
+  height: 56px;
+}
+#w1 > #options > label > .checkbox , #w6 > #options2 > label > .checkbox{
+ accent-color:  #383838;
+ border-radius: 4px;
+ width:20px;
+ height: 20px;;
+}
+
+#w3 > .labelContainer, #w4 >.labelContainer, #w5 >.labelContainer{
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+}
+
+#w3 > .labelContainer> label, #w4 > .labelContainer> label, #w5 > .labelContainer> label  {
+  background: #F5F5F5;
+  display: flex;
+  cursor: pointer;
+  height: 56px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  width: 512px;
+}
+#w3 > .labelContainer> label> .value, #w4 > .labelContainer> label> .value, #w5 > .labelContainer> label> .value{
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 512px;  
+}
+#w3> .labelContainer> label> .value:hover, #w4 > .labelContainer> label> .value:hover , #w5 > .labelContainer> label> .value:hover{
+  width: 512px;  
+  background: #FFFFFF;
+  border-radius: 10px;
+  outline: 1px solid #383838;
+  
+}
+#w3> .labelContainer> label >.value::before, #w4 > .labelContainer> label >.value::before, #w5 > .labelContainer> label >.value::before {
+  content: "";
+  position: absolute;
+  margin-left: 452px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  outline: 1px solid #383838;
+}
+
+#w3 > .labelContainer> label > input[type="radio"]:checked~.value::before, #w4 > .labelContainer> label > input[type="radio"]:checked~.value::before, #w5 > .labelContainer> label > input[type="radio"]:checked~.value::before{
+  position: absolute;
+  outline-width: 6px;
+  width: 10px;
+  height: 10px;
+  margin-left: 456px;
+  margin-top:6px;
+  background-color: #FFFFFF;
+}
+.lastEmoji{
+  display:flex;
+  align-items: center;
+}
+.lastEmoji p{
+  width: 396px;
+  height: 20px;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383838;
+}
+form {
+  width:512px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+form > input {
+  width: 512px;
+  height: 56px;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #9B9B9B;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #F5F5F5;
+  border-radius: 16px;
+  border: none;
+  padding-left: 16px;
+}
+form > .input1{
+  padding-top: 24px;
+}
+.submit{
+  background: #383838;
+  color: #FFFFFF;
+}
+.downmessage{
+  display: flex;
+
+}
+.downmessage > p{
+  position: absolute;
+  height: 20px;
+  left: 32px;
+  top: 332px;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #9B9B9B;
+
+}
+.downmessage > a{
+  height: 20px;
+  padding-top: 4.5px;
+  padding-left: 334px;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #383838;
+}

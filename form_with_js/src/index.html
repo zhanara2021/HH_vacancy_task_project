@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="index.js"></script>
+    <div class="container">
+        <div class="left">
+            <h2>Подберём вуз мечты</h2>
+            <p class="containerText">Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас вузов</p>
+            <image src="./images/Group1593.svg" alt="advertising_image">
+        </div>
+        <div class="right" id="rightPanel">
+            <div id="windows">
+                <div id="w0">
+                    <div class="upper">
+                        <p class="upperp1">Для кого вы ищете учебное заведение?</p>
+                        <p class="upperp2">Шаг 1/9</p>
+                    </div>
+                    <div class="labelContainer">
+                      <div>
+                          <label>
+                            <input type="radio" name="gender" value="Себе" checked>
+                            <span class="value">Себе</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Родственнику">
+                            <span class="value">Родственнику</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Ребенку">
+                            <span class="value">Ребенку</span>
+                          </label>
+                      </div>
+                      <div>
+                          <label>
+                            <input type="radio" name="gender" value="Супругу/супруге" checked>
+                            <span class="value">Супругу/супруге</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Коллеге">
+                            <span class="value">Коллеге</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="other">
+                            <span class="value">Другое</span>
+                          </label>
+                      </div>
+                    </div>
+                </div>
+                <div id="w1"  style="display: none">
+                    <div class="upper">
+                        <p class="upperp1">В каком городе планируете поступать?</p>
+                        <p class="upperp2">Шаг 2/9</p>
+                    </div>
+                    <div class = "dropdown" onclick = "showOptions()">
+                        Город
+                        <img class="downErrow" src="./images/downerrow.svg" alt="downerrow"/>
+                   </div>
+                   <div id = "options">
+                      <label for = "one">
+                         <input class="checkbox" type = "checkbox" id = "one" value = "First Option" />
+                            Санкт-Петербург
+                      </label>
+                      <label for = "two">
+                         <input class="checkbox" type = "checkbox" id = "two" value = "Second Option" />
+                            Москва
+                      </label>
+                      <label for = "three">
+                         <input class="checkbox" type = "checkbox" id = "three" value = "Third Option" />
+                            Новосибирск
+                      </label>
+                      <label for = "four">
+                         <input class="checkbox" type = "checkbox" id = "four" value = "Fourth Option" />
+                            Нижний новгород
+                      </label>
+                      <label for = "five">
+                         <input class="checkbox" type = "checkbox" id = "five" value = "Fifth Option" />
+                            Ростов-на-Дону
+                      </label>
+                   </div>
+                </div>
+                <div id="w2" style="display: none">
+                    <div class="upper">
+                        <p class="upperp1">Какое образование уже есть?</p>
+                        <p class="upperp2">Шаг 3/9</p>
+                    </div>
+                    <div class="labelContainer">
+                      <div>
+                          <label>
+                            <input type="radio" name="gender" value="9 классов" checked>
+                            <span class="value">9 классов</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="11 классов">
+                            <span class="value">11 классов</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="other">
+                            <span class="value">Училище</span>
+                          </label>
+                      </div>
+                      <div>
+                          <label>
+                            <input type="radio" name="gender" value="Колледж/техникум" checked>
+                            <span class="value">Колледж/техникум</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="11 классов">
+                            <span class="value">11 классов</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Неоконченное высшее">
+                            <span class="value">Неоконченное высшее</span>
+                          </label>
+                      </div>
+                    </div>
+                </div>
+                <div id="w3" style="display: none">
+                    <div class="upper">
+                        <p class="upperp1">Куда планируете поступать?</p>
+                        <p class="upperp2">Шаг 4/9</p>
+                    </div>
+                    <div class="labelContainer">
+                          <label>
+                            <input type="radio" name="gender" value="9 классов" checked>
+                            <span class="value">9 классов</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="11 классов">
+                            <span class="value">11 классов</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="other">
+                            <span class="value">Училище</span>
+                          </label>
+                    </div>
+                </div>
+                <div id="w4" style="display: none">
+                    <div class="upper">
+                        <p class="upperp1">Какую форму обучения предпочитаете?</p>
+                        <p class="upperp2">Шаг 5/9</p>
+                    </div>
+                    <div class="labelContainer">
+                          <label>
+                            <input type="radio" name="gender" value="Очную" checked>
+                            <span class="value">Очную</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Заочную">
+                            <span class="value">Заочную</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Дистанционную">
+                            <span class="value">Дистанционную</span>
+                          </label>
+                    </div>
+                </div>
+                <div id="w5" style="display: none">
+                    <div class="upper">
+                        <p class="upperp1">Рассматриваете платное обучение?</p>
+                        <p class="upperp2">Шаг 6/9</p>
+                    </div>
+                    <div class="labelContainer">
+                          <label>
+                            <input type="radio" name="gender" value="Нет" checked>
+                            <span class="value">Нет, только бюджет</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Да">
+                            <span class="value">Да, планирую учиться платно</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="оба">
+                            <span class="value">Возможны оба варианта</span>
+                          </label>
+                    </div>
+                </div>
+                <div id="w6"  style="display: none">
+                    <div class="upper">
+                        <p class="upperp1">Какая специальность интересует?</p>
+                        <p class="upperp2">Шаг 7/9</p>
+                    </div>
+                    <div class = "dropdown" onclick = "showOptions2()">
+                        Специальность
+                        <img class="downErrow" src="./images/downerrow.svg" alt="downerrow"/>
+                   </div>
+                   <div id = "options2">
+                      <label for = "one">
+                         <input class="checkbox" type = "checkbox" id = "one" value = "First Option" />
+                         Экономика
+                      </label>
+                      <label for = "two">
+                         <input class="checkbox" type = "checkbox" id = "two" value = "Second Option" />
+                          Философия
+                      </label>
+                      <label for = "three">
+                         <input class="checkbox" type = "checkbox" id = "three" value = "Third Option" />
+                         Социология
+                      </label>
+                      <label for = "four">
+                         <input class="checkbox" type = "checkbox" id = "four" value = "Fourth Option" />
+                         Юриспруденция
+                      </label>
+                      <label for = "five">
+                         <input class="checkbox" type = "checkbox" id = "five" value = "Fifth Option" />
+                         Менеджмент
+                      </label>
+                   </div>
+                </div>
+
+                <div id="w7" style="display: none">
+                    <div class="upper">
+                        <p class="upperp1">Как скоро планируете поступать?</p>
+                        <p class="upperp2">Шаг 8/9</p>
+                    </div>
+                    <div class="labelContainer">
+                      <div>
+                          <label>
+                            <input type="radio" name="gender" value="быстрее" checked>
+                            <span class="value">Как можно быстрее</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Квартал">
+                            <span class="value">Квартал</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Год">
+                            <span class="value">Год</span>
+                          </label>
+                      </div>
+                      <div>
+                          <label>
+                            <input type="radio" name="gender" value="Месяц" checked>
+                            <span class="value">Месяц</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="Полгода">
+                            <span class="value">Полгода</span>
+                          </label>
+                      </div>
+                    </div>
+                </div>
+
+                <div id="w8" style="display: none">
+                    <div class="upper">
+                        <div class="lastEmoji">
+                            <p class="upperp1">Ваша подборка готова!
+                            <img src="../src/images/emoji.jpg.png" height="25px" width="25px"/>
+                            Куда нам отправить её?</p>
+                        </div>
+                        <p class="upperp2">Шаг 9/9</p>
+                    </div>
+                    <form class="labelContainer">
+                        <input class="input1" type="text" name="name" id="name" required value="Как вас зовут?">
+                        <input type="text" name="name" id="name" required value="Номер телефона">
+                        <input type="text" name="name" id="name" required value="E-mail">
+                        <input class="submit" type="submit" value="Получить подборку">   
+                    </form>
+                    <div class="downmessage">
+                      <p>Нажимая на кнопку, вы даете согласие на обработку своих</p>
+                      <a href="url">Персональных данных</a>
+                    </div>
+                </div>
+
+                <div class="buttons" id="showHide">                    
+                    <button type="button" onclick="previous()" id="buttonPrevious" hidden> 
+                        <image class="buttonVector1" src="./images/leftErrow.svg" alt="buttonVector">
+                        Назад 
+                    </button>
+                    <button onclick="next()" id="buttonNext">Далее  
+                        <image class="buttonVector2" src="./images/Vector.svg" alt="buttonVector">
+                    </button>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
